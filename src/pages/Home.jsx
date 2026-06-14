@@ -1,0 +1,12 @@
+import MainLayout from "../layouts/MainLayout";
+import HeroSection from "../components/HeroSection";
+
+const Home = () => {
+  return (
+    <MainLayout>
+      <HeroSection />
+    </MainLayout>
+  );
+};
+
+export default Home;

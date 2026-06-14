@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-purple: #7f5af0;
+    --brand-pink: #ff4d8d;
+    --brand-orange: #ff9f43;
+    --brand-cream: #fff9f5;
+    --brand-dark: #1e1e1e;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-cream text-brand-dark font-sans antialiased;
+    background-color: var(--brand-cream);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(127, 90, 240, 0.25);
+    color: var(--brand-dark);
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body, html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply backdrop-blur-xl bg-white/50 border border-white/60 shadow-soft;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-2xl bg-white/60 border border-white/70 rounded-3xl shadow-soft;
+  }
+
+  .text-gradient-funky {
+    background: linear-gradient(
+      120deg,
+      #7f5af0 0%,
+      #ff4d8d 45%,
+      #ff9f43 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .text-gradient-shimmer {
+    background: linear-gradient(
+      120deg,
+      #7f5af0 0%,
+      #ff4d8d 25%,
+      #ff9f43 50%,
+      #ff4d8d 75%,
+      #7f5af0 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: shimmer 6s linear infinite;
+  }
+
+  .grain-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.18;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .heading-display {
+    font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .mask-fade-edges {
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
+}
