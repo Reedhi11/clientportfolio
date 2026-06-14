@@ -19,7 +19,7 @@ const About = () => {
         {/* Photo + Story */}
         <section className="relative w-full py-4 sm:py-6">
           <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-4 gap-x-2 lg:gap-x-6 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-4 gap-x-2 lg:gap-x-6 items-start">
               <div className="lg:col-span-4 order-1 lg:order-1 flex justify-center lg:justify-end">
                 <AboutImageCard />
               </div>

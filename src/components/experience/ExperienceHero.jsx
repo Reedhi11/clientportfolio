@@ -15,16 +15,16 @@ const ExperienceHero = () => {
   return (
     <section ref={containerRef} className="relative w-full pt-24 pb-6 sm:pt-28 sm:pb-10 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <motion.div 
+        <motion.div
           style={{ y: y1 }}
           className="absolute top-10 left-[10%] w-64 h-64 bg-brand-pink/20 rounded-full blur-[80px]"
         />
       </div>
 
       <div className="mx-auto w-full max-w-5xl px-5 sm:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        
+
         {/* Left: Title */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: easeOutExpo }}
@@ -47,7 +47,7 @@ const ExperienceHero = () => {
         </motion.div>
 
         {/* Right: Summary Cards */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: easeOutExpo, delay: 0.1 }}
@@ -81,7 +81,7 @@ const ExperienceHero = () => {
             <div className="relative z-10">
               <h3 className="text-base sm:text-lg font-bold mb-1">Full-time Roles</h3>
               <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-medium max-w-lg">
-                At Medtigo, designing course experiences. Previously at OSBEAM IT, building responsive web apps, admin panels, and internal digital systems.
+                At medtigo, designing course experiences. Previously at OSBEAM IT, building responsive web apps, admin panels, and internal digital systems.
               </p>
             </div>
           </div>

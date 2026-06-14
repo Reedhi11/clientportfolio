@@ -5,15 +5,19 @@ import img1 from "../../../assets/illustration/1.jpg";
 import imgCorset from "../../../assets/illustration/corset.jpg";
 import imgFashionBoard from "../../../assets/illustration/fashion board brand style.jpg";
 import imgCouple from "../../../assets/illustration/priyanka nick couple work (1).jpg";
+import imgNew1 from "../../../assets/illustration/ILLUSTRATION1.jpg";
+import imgNew2 from "../../../assets/illustration/ILLUSTRATION2.jpg";
+import imgNew3 from "../../../assets/illustration/ILLUSTRATION3.jpg";
+import imgNew4 from "../../../assets/illustration/ILLUSTRATION4.jpg";
 
 const projects = [
   {
-    tabName: "Editorial Muse",
-    title: <>FASHION ISN'T ABOUT BRAND. IT'S ABOUT <span className="text-[#d65b75]">STYLE</span>.</>,
-    desc: "An editorial illustration inspired by confidence, glamour and individuality.",
-    inspiredBy: ["Power silhouettes", "Runway energy", "Bold femininity", "Editorial attitude"],
+    tabName: "Name Art",
+    title: <>CUSTOMIZED <span className="text-[#d65b75]">NAME ART</span></>,
+    desc: "A personalized artwork designed to celebrate identity and individuality. Combining decorative patterns, vibrant typography, and handcrafted aesthetics, this piece transforms a simple name into a meaningful keepsake, perfect for gifting and home décor.",
+    inspiredBy: ["Personal expression", "Thoughtful gifting", "Handcrafted details", "Timeless elegance"],
     image: img1,
-    notes: ["Confident", "Glamorous", "Timeless", "Feminine"],
+    notes: ["Personalized", "Vibrant", "Meaningful", "Handcrafted"],
     swatchColor: "bg-purple-900",
     tapeColor: "bg-[#bda1c7]"
   },
@@ -46,6 +50,46 @@ const projects = [
     notes: ["Cohesive", "Aesthetic", "Modern", "Curated"],
     swatchColor: "bg-[#4a5568]",
     tapeColor: "bg-[#a0aec0]"
+  },
+  {
+    tabName: "Preppy Chic",
+    title: <>EVERYDAY <span className="text-[#d65b75]">PREPPY</span> STYLE.</>,
+    desc: "A vibrant fashion illustration capturing a youthful, preppy mirror-selfie aesthetic.",
+    inspiredBy: ["Campus fashion", "Autumn palettes", "Casual layering", "Gen Z aesthetics"],
+    image: imgNew1,
+    notes: ["Youthful", "Trendy", "Layered", "Chic"],
+    swatchColor: "bg-[#718b5b]",
+    tapeColor: "bg-[#b8c2b3]"
+  },
+  {
+    tabName: "Denim Edge",
+    title: <>BOLD DENIM <span className="text-[#d65b75]">EDGE</span>.</>,
+    desc: "An edgy, pop-star inspired look featuring distressed denim with dramatic cutouts and matching gloves.",
+    inspiredBy: ["Stage costumes", "Y2K revival", "Distressed textures", "Bold confidence"],
+    image: imgNew2,
+    notes: ["Edgy", "Daring", "Textured", "Fierce"],
+    swatchColor: "bg-[#1f4e8c]",
+    tapeColor: "bg-[#91add6]"
+  },
+  {
+    tabName: "Streetwear",
+    title: <>URBAN <span className="text-[#d65b75]">STREETWEAR</span> VIBES.</>,
+    desc: "A relaxed yet vibrant street-style look featuring oversized silhouettes and contrasting neon colors.",
+    inspiredBy: ["Urban culture", "Athleisure", "Color blocking", "Oversized fits"],
+    image: imgNew3,
+    notes: ["Relaxed", "Vibrant", "Urban", "Cool"],
+    swatchColor: "bg-[#8cc63f]",
+    tapeColor: "bg-[#cce3a6]"
+  },
+  {
+    tabName: "Bridal Couture",
+    title: <>TRADITIONAL <span className="text-[#d65b75]">BRIDAL</span> ELEGANCE.</>,
+    desc: "A stunningly detailed illustration of a traditional Indian bridal lehenga, adorned with intricate gold embroidery.",
+    inspiredBy: ["Indian heritage", "Bridal couture", "Intricate detailing", "Royal elegance"],
+    image: imgNew4,
+    notes: ["Regal", "Intricate", "Traditional", "Elegant"],
+    swatchColor: "bg-[#a61c1c]",
+    tapeColor: "bg-[#e09898]"
   }
 ];
 
@@ -59,7 +103,7 @@ const IllustrationGallery = () => {
       <div className="max-w-[1400px] w-full h-auto lg:h-[650px] xl:h-[750px] flex flex-col lg:flex-row shadow-[0_30px_60px_rgba(0,0,0,0.15)] relative rounded-sm bg-[#f4ecd8] border border-[#e2d5c3]">
 
         {/* Navigation Sidebar */}
-        <div className="w-full lg:w-[220px] xl:w-[260px] h-auto lg:h-full flex flex-row lg:flex-col items-center lg:items-stretch py-4 md:py-6 lg:py-16 xl:py-20 px-4 md:px-8 lg:px-8 xl:px-12 border-b lg:border-b-0 lg:border-r border-[#e3d7c5] relative z-30 bg-[#f6efe2] shrink-0 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div className="w-full lg:w-[220px] xl:w-[260px] h-auto lg:h-full flex flex-row lg:flex-col items-center lg:items-stretch py-4 md:py-6 lg:py-16 xl:py-20 px-4 md:px-8 lg:px-8 xl:px-12 border-b lg:border-b-0 lg:border-r border-[#e3d7c5] relative z-30 bg-[#f6efe2] shrink-0 overflow-x-auto lg:overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {/* Decorative Tape */}
           <div className="hidden lg:block absolute top-[-10px] left-8 w-24 h-6 bg-[#bda1c7] opacity-80 rotate-[-5deg] shadow-sm" />
 

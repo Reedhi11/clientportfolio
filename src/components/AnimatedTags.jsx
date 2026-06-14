@@ -1,30 +1,20 @@
 import { motion } from "framer-motion";
 import { staggerParent, tagPop } from "../animations/variants";
 
-// Tiny inline icon squares for each skill — colored boxes with letter glyphs
-const Glyph = ({ children, bg, color = "#fff" }) => (
-  <span
-    className="inline-flex h-4 w-4 items-center justify-center rounded-[5px] text-[9px] font-bold leading-none"
-    style={{ background: bg, color }}
-  >
-    {children}
-  </span>
-);
+import figmaIcon from "../assets/tools/figma.png";
+import aiIcon from "../assets/tools/AI.png";
+import psIcon from "../assets/tools/ps.png";
+import canvaIcon from "../assets/tools/canva.png";
+import klaviyoIcon from "../assets/tools/klaviyo.png";
+import miroIcon from "../assets/tools/miro.png";
 
 const TAGS = [
-  { label: "Figma", glyph: <Glyph bg="#F24E1E">F</Glyph> },
-  { label: "UI Design", glyph: <Glyph bg="#7F5AF0">Ui</Glyph> },
-  { label: "Wireframing", glyph: <Glyph bg="#FF9F43">W</Glyph> },
-  { label: "Prototyping", glyph: <Glyph bg="#10B981">▶</Glyph> },
-  { label: "Graphic Design", glyph: <Glyph bg="#FF4D8D">G</Glyph> },
-  {
-    label: "Photoshop",
-    glyph: <Glyph bg="#31A8FF" color="#0B2E47">Ps</Glyph>,
-  },
-  {
-    label: "Illustrator",
-    glyph: <Glyph bg="#FF9A00" color="#3D1A00">Ai</Glyph>,
-  },
+  { label: "Figma", icon: figmaIcon },
+  { label: "Illustrator", icon: aiIcon },
+  { label: "Photoshop", icon: psIcon },
+  { label: "Canva", icon: canvaIcon },
+  { label: "Miro", icon: miroIcon },
+  { label: "Klaviyo", icon: klaviyoIcon },
 ];
 
 const AnimatedTags = () => {
@@ -41,10 +31,10 @@ const AnimatedTags = () => {
           key={tag.label}
           variants={tagPop}
           whileHover={{ y: -3, rotate: -1.5 }}
-          className="group relative inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 backdrop-blur-md px-3 py-1.5 text-xs sm:text-sm font-medium text-brand-dark/85 shadow-sm cursor-default"
+          title={tag.label}
+          className="group relative inline-flex items-center justify-center rounded-full border border-white/70 bg-white/70 backdrop-blur-md p-2.5 sm:p-3 shadow-sm cursor-default"
         >
-          {tag.glyph}
-          {tag.label}
+          <img src={tag.icon} alt={tag.label} className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
           <span className="absolute -inset-px rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-funky blur-md -z-10" />
         </motion.li>
       ))}

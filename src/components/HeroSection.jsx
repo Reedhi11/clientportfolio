@@ -17,10 +17,10 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full flex flex-col items-stretch pt-24 pb-6 lg:pt-24 lg:pb-8"
+      className="relative w-full flex flex-col items-stretch pt-32 pb-12 lg:pt-40 lg:pb-16"
     >
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-8 gap-x-8 lg:gap-x-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-12 gap-x-8 lg:gap-x-10 items-start">
           {/* ============ LEFT — CONTENT ============ */}
           <motion.div
             variants={staggerParent(0.12, 0.2)}
@@ -45,7 +45,7 @@ const HeroSection = () => {
             {/* Heading — quoted, name in gradient */}
             <motion.h1
               variants={fadeUp}
-              className="heading-display mt-6 text-[2.5rem] sm:text-5xl lg:text-[3.75rem] xl:text-[4.5rem] text-brand-dark"
+              className="heading-display text-[2.5rem] sm:text-5xl lg:text-[3.75rem] xl:text-[4.5rem] text-brand-dark"
             >
               <span className="block">
                 <span className="text-brand-dark/90">&ldquo;Hi, I&rsquo;m</span>
@@ -84,13 +84,13 @@ If you're hiring someone who gets users, visuals, and impact... that's me.&rdquo
             </motion.div> */}
 
             {/* Tags */}
-            <motion.div variants={fadeUp} className="mt-8">
+            <motion.div variants={fadeUp} className="mt-4">
               <AnimatedTags />
             </motion.div>
           </motion.div>
 
           {/* ============ RIGHT — VISUAL + RESUME HIGHLIGHTS ============ */}
-          <div className="lg:col-span-6 relative flex flex-col items-center lg:items-stretch gap-5">
+          <div className="lg:col-span-6 relative flex flex-col items-center lg:items-stretch gap-10">
             <div className="w-full max-w-md lg:max-w-none flex justify-center">
               <FloatingCards />
             </div>

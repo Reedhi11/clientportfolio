@@ -1,4 +1,4 @@
-import { Briefcase, PenTool, LayoutTemplate, Share2 } from "lucide-react";
+import { Briefcase, PenTool, LayoutTemplate, Share2, MonitorSmartphone } from "lucide-react";
 import hoopArtImg from "../assets/freelance/wedding hoop.jpeg";
 
 import illustrationImg from "../assets/illustration/1.jpg";
@@ -11,6 +11,7 @@ export const CATEGORIES = [
   { id: "illustration", label: "Illustration", icon: PenTool },
   { id: "logo", label: "Logo Design", icon: LayoutTemplate },
   { id: "social", label: "Social Media", icon: Share2 },
+
 ];
 
 export const PROJECTS_DATA = [
@@ -25,10 +26,10 @@ export const PROJECTS_DATA = [
   },
   {
     id: 2,
-    title: "Editorial Muse",
+    title: "Customized Name Art",
     category: "Illustration",
     categoryId: "illustration",
-    description: "An editorial illustration inspired by confidence, glamour and individuality.",
+    description: "A personalized artwork designed to celebrate identity and individuality, combining decorative patterns and vibrant typography.",
     tools: ["Photoshop", "Illustrator", "Procreate"],
     image: illustrationImg,
   },
@@ -43,11 +44,12 @@ export const PROJECTS_DATA = [
   },
   {
     id: 4,
-    title: "Eco Campaign",
+    title: "Social Media Post",
     category: "Social Media",
     categoryId: "social",
     description: "Social media marketing materials for a sustainable living awareness campaign.",
-    tools: ["Figma", "Illustrator"],
+    tools: ["Figma", "Illustrator", "Photoshop", "AI"],
     image: socialImg,
-  }
+  },
+
 ];

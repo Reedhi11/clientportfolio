@@ -23,7 +23,7 @@ import img16 from "../../../assets/socialmedia/taurus car loan.jpg";
 import img17 from "../../../assets/socialmedia/taurus debtb new.jpg";
 import img18 from "../../../assets/socialmedia/taurus doc new chnages.jpg";
 
-const categories = ["All", "Taurus Finance", "Healthcare", "Events & Campaigns", "Miscellaneous"];
+const categories = ["All", "Taurus Finance", "Healthcare", "Events & Campaigns"];
 
 const posts = [
   // Taurus Finance
@@ -48,9 +48,9 @@ const posts = [
   { img: img7, title: "Mother's Day Special", category: "Events & Campaigns" },
   { img: img9, title: "Product Launch", category: "Events & Campaigns" },
 
-  // Miscellaneous
-  { img: img10, title: "Campaign Update 1", category: "Miscellaneous" },
-  { img: img11, title: "Campaign Update 2", category: "Miscellaneous" },
+  // Miscellaneous (now moved to Events & Campaigns)
+  { img: img10, title: "Campaign Update 1", category: "Events & Campaigns" },
+  { img: img11, title: "Campaign Update 2", category: "Events & Campaigns" },
 ];
 
 const PostCard = ({ post, idx, onClick }) => (

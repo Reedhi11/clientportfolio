@@ -130,6 +130,8 @@ const ProjectCarousel = ({ projects }) => {
                     navigate("/projects/social-media");
                   } else if (activeProject.category === "Logo Design") {
                     navigate("/projects/logo-design");
+                  } else if (activeProject.category === "UI/UX Design") {
+                    navigate("/projects/uiux");
                   } else {
                     console.log("View details for", activeProject.title);
                   }

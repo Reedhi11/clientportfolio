@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Layers, Layout, PenTool, Laptop, MonitorSmartphone, Palette } from "lucide-react";
 
 const EXPERIENCE_DATA = [
   {
@@ -19,7 +20,14 @@ const EXPERIENCE_DATA = [
     accent: "#7F5AF0",
     bg: "from-[#F4F0FF] to-[#E8E0FF]",
     glow: "bg-[#7F5AF0]",
-    icon: "💼",
+    icon: (
+      <div className="relative flex items-center justify-center">
+        <Laptop className="w-6 h-6 text-[#7F5AF0]" strokeWidth={1.5} />
+        <div className="absolute -bottom-1 -right-1 bg-white/90 rounded-full p-0.5 shadow-sm">
+          <PenTool className="w-3 h-3 text-[#7F5AF0]" strokeWidth={2.5} />
+        </div>
+      </div>
+    ),
   },
   {
     title: "UI/UX Designer",
@@ -38,7 +46,7 @@ const EXPERIENCE_DATA = [
     accent: "#FF4D8D",
     bg: "from-[#FFF0F5] to-[#FFE0EC]",
     glow: "bg-[#FF4D8D]",
-    icon: "✨",
+    icon: <MonitorSmartphone className="w-6 h-6 text-[#FF4D8D]" strokeWidth={1.5} />,
   },
   {
     title: "Freelance Designer",
@@ -49,14 +57,14 @@ const EXPERIENCE_DATA = [
       "Designed engaging social media creatives for multiple clients across various industries.",
       "Created modern and professional brochures for PG accommodations highlighting key offerings.",
       "Developed distinctive logo concepts and brand identities tailored to clients' business goals.",
-      "Delivered end-to-end design solutions while managing client communication independently.",
-      "Adapted designs based on client requirements and emerging design trends."
+      "Liveheart Events: Designed event branding assets including banners, stage backdrops, social media creatives, and promotional content, along with basic video editing for marketing reels and event campaigns.",
+      "Taurus Financial Services: Created social media creatives and marketing visuals that helped communicate financial services, investment-related content, and brand messaging across digital platforms."
     ],
     skills: ["Social Media", "Brochures", "Logo Design", "Client Mgmt", "DIY"],
     accent: "#FF9F43",
     bg: "from-[#FFF8F0] to-[#FFEFD9]",
     glow: "bg-[#FF9F43]",
-    icon: "🎨",
+    icon: <Palette className="w-6 h-6 text-[#FF9F43]" strokeWidth={1.5} />,
   },
 ];
 

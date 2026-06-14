@@ -80,13 +80,13 @@ const AboutImageCard = () => {
           >
             {/* gradient border */}
             <div className="relative rounded-[2rem] p-[3px] bg-gradient-funky shadow-glow">
-              <div className="relative rounded-[1.85rem] overflow-hidden bg-brand-cream">
+              <div className="relative rounded-[1.85rem] overflow-hidden bg-brand-cream flex justify-center items-center">
                 <div className="aspect-[4/5] w-full overflow-hidden">
                   <img
                     src={portraitImg}
                     alt="Portrait of Prakriti Panda"
                     loading="eager"
-                    className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out hover:scale-105"
+                    className="h-full w-full object-cover object-top transition-transform duration-[1200ms] ease-out hover:scale-105 block"
                   />
                 </div>
                 <div

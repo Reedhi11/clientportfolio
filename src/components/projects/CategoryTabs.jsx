@@ -1,4 +1,4 @@
-import { Briefcase, PenTool, Share2, LayoutGrid, Image } from "lucide-react";
+import { Briefcase, PenTool, Share2, LayoutGrid, Image, MonitorSmartphone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
@@ -29,13 +29,14 @@ const CategoryTabs = ({ activeCategory, onCategoryChange }) => {
                 navigate("/projects/social-media");
               } else if (cat.name === "Logo Design") {
                 navigate("/projects/logo-design");
+
               } else {
                 onCategoryChange && onCategoryChange(cat.name);
               }
             }}
             className={`flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold shadow-md transition-all hover:-translate-y-1 ${active
-                ? "bg-gradient-to-r from-[#7F5AF0] via-[#FF4D8D] to-[#FF9F43] text-white shadow-pink-200"
-                : "bg-white/80 text-gray-700"
+              ? "bg-gradient-to-r from-[#7F5AF0] via-[#FF4D8D] to-[#FF9F43] text-white shadow-pink-200"
+              : "bg-white/80 text-gray-700"
               }`}
           >
             <Icon size={17} />
