@@ -22,8 +22,14 @@ import img15 from "../../../assets/socialmedia/taurus business loan new.jpg";
 import img16 from "../../../assets/socialmedia/taurus car loan.jpg";
 import img17 from "../../../assets/socialmedia/taurus debtb new.jpg";
 import img18 from "../../../assets/socialmedia/taurus doc new chnages.jpg";
+import jew1 from "../../../assets/socialmedia/jew1.jpeg";
+import jew2 from "../../../assets/socialmedia/jew2.jpeg";
+import jew3 from "../../../assets/socialmedia/jew3.jpeg";
+import jew4 from "../../../assets/socialmedia/jew4.jpeg";
+import jew5 from "../../../assets/socialmedia/jew5.jpeg";
+import jew6 from "../../../assets/socialmedia/jew6.jpeg";
 
-const categories = ["All", "Taurus Finance", "Healthcare", "Events & Campaigns"];
+const categories = ["All", "Taurus Finance", "Healthcare", "Events & Campaigns", "Jewellery"];
 
 const posts = [
   // Taurus Finance
@@ -51,6 +57,14 @@ const posts = [
   // Miscellaneous (now moved to Events & Campaigns)
   { img: img10, title: "Campaign Update 1", category: "Events & Campaigns" },
   { img: img11, title: "Campaign Update 2", category: "Events & Campaigns" },
+
+  // Jewelleries
+  { img: jew1, title: "Jewellery Design 1", category: "Jewellery" },
+  { img: jew2, title: "Jewellery Design 2", category: "Jewellery" },
+  { img: jew3, title: "Jewellery Design 3", category: "Jewellery" },
+  { img: jew4, title: "Jewellery Design 4", category: "Jewellery" },
+  { img: jew5, title: "Jewellery Design 5", category: "Jewellery" },
+  { img: jew6, title: "Jewellery Design 6", category: "Jewellery" },
 ];
 
 const PostCard = ({ post, idx, onClick }) => (
